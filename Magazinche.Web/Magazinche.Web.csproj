@@ -19,10 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\AspNetCoreTemplate.Services.Mapping\Magazinche.Mapping.csproj" />
     <ProjectReference Include="..\Magazinche.Data\Magazinche.Data.csproj" />
     <ProjectReference Include="..\Magazinche.Services\Magazinche.Services.csproj" />
   </ItemGroup>

@@ -20,12 +20,14 @@ namespace Magazinche.Data.Models
         public int SellerId { get; set; }
         public User Seller { get; set; }
 
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
+
 
         public ICollection<BuyerPoduct> BuyerPoducts { get; set; } = new List<BuyerPoduct>();
 
         public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
+       
     }
 }

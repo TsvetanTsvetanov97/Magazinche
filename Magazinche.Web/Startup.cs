@@ -7,6 +7,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Magazinche.Services;
 using Magazinche.Data.Models;
 using Magazinche.Data;
+using AutoMapper;
+using Magazinche.Services.CategoryServices;
+using Magazinche.Mapping;
+using Magazinche.Web.Models;
+using System.Reflection;
 
 namespace Magazinche.Web
 {
@@ -22,6 +27,8 @@ namespace Magazinche.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+          
+
             services.AddDbContext<MagazincheDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -31,7 +38,8 @@ namespace Magazinche.Web
             
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-            
+            services.AddTransient<ICategoryService, CategoryService>();
+
 
             services.AddMvc();
         }
@@ -39,6 +47,7 @@ namespace Magazinche.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            AutoMapperConfig.RegisterMappings(typeof(ErrorViewModel).GetTypeInfo().Assembly);
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();

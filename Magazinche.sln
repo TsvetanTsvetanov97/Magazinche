@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magazinche.Web", "Magazinch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magazinche.Data", "Magazinche.Data\Magazinche.Data.csproj", "{B024B2BF-5A2F-4E9B-BF49-D685F84638C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magazinche.Services", "Magazinche.Services\Magazinche.Services.csproj", "{D42B928E-98EC-46B7-AC5B-7DEF0CC3FC23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magazinche.Services", "Magazinche.Services\Magazinche.Services.csproj", "{D42B928E-98EC-46B7-AC5B-7DEF0CC3FC23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magazinche.Mapping", "AspNetCoreTemplate.Services.Mapping\Magazinche.Mapping.csproj", "{E246DCC6-941F-4E74-A414-37E11BA14AA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D42B928E-98EC-46B7-AC5B-7DEF0CC3FC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D42B928E-98EC-46B7-AC5B-7DEF0CC3FC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D42B928E-98EC-46B7-AC5B-7DEF0CC3FC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E246DCC6-941F-4E74-A414-37E11BA14AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E246DCC6-941F-4E74-A414-37E11BA14AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E246DCC6-941F-4E74-A414-37E11BA14AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E246DCC6-941F-4E74-A414-37E11BA14AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
